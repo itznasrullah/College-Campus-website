@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 75, 0.5),rgb(0, 0, 75,0.5)
+    ), url("./assets/campus.jpg") center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    height: 15%;
+    padding: 0 7%;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo{
+    height: 2.7rem;
+}
+
+.menu{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar-items{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 55%;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
+.navbar-items li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar-items li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85%;
+}
+
+.content h1{
+    font-size: 3rem;
+}
+
+.content p{
+    width: 60%;
+    padding: 1rem;
+}
+
+.content a{
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.content a:hover{
+    border: 1px solid rgb(255, 34, 34);
+    background-color: rgb(255, 34, 34);
+    transition-duration: 0.4s;
+}
+
+.section{
+    text-align: center;
+    padding: 3rem 4%;
+    box-shadow: 0 1px rgb(110, 110, 110);
+}
+
+.section h2{
+    font-size: 2.3rem;
+}
+
+.section p {
+    color: rgb(110, 110, 110);
+    padding: 1rem;
+}
+
+/* Courses */
+.cards-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(238, 229, 229);
+    border-radius: 0.5rem;
+    width: 18rem;
+    margin: 1rem;
+}
+
+.card:hover{
+    box-shadow: 0 0 0.5rem 0.5rem rgba(47, 47, 47, 0.198);
+}
+
+.card h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+/* Facility section*/
+.facility-card{
+    width: 18rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.facility-card img{
+    border-radius: 0.5rem;
+    width: 18rem;
+}
+
+.facility-card p,.facility-card h3{
+    padding: 0.5rem 0;
+}
+
+/* Enroll now section */
+.enroll {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)
+    ), url("./assets/banner2.jpg") center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.enroll h2{
+    width: 70%;
+    padding: 1.2rem;
+}
+
+.enroll a{
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.enroll a:hover{
+    border: 1px solid rgb(255, 34, 34);
+    background-color: rgb(255, 34, 34);
+    transition-duration: 0.4s;
+}
+
+/* About Us */
+.about h3{
+    font-size: 1.5rem;
+}
+
+.about .fab{
+    font-size: 1.5rem;
+    color: rgb(255, 34, 34);
+    padding: 0.5rem 0.8rem;
+}
+
+.about p span{
+    color: rgb(255, 34, 34);
+    font-weight: bold;
+}
+
+@media screen and (min-width:750px){
+
+    /* Navbar start */
+    .navbar{
+        /* background-color: black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-container .fas{
+        display: none;
+    }
+
+    .navbar-items{
+        background-color: transparent;
+        position: static;
+        display: flex;
+        text-align: left;
+    }
+
+    .navbar-items li a{
+        font-size: 1rem;
+    }
+    /* Navbar end */
+}
+
+/* Font size */
+@media (max-width:750px) {
+    html{
+        font-size: 95%;
+    }
+}
+
+@media (max-width:650px) {
+    html{
+        font-size: 90%;
+    }
+}
+
+@media (max-width:550px) {
+    html{
+        font-size: 85%;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (max-width:400px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width:350px) {
+    html{
+        font-size: 70%;
+    }
+}
+/* Font size end */
+
+.show{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
